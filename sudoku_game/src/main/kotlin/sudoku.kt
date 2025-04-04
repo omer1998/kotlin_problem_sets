@@ -76,7 +76,7 @@ fun isValidSubgrid(puzzle: List<List<Any>>): Boolean{
                     return false
                 }
                 if (num in seen){
-                    isValid = false
+                    return false
                 }else{
                     seen.add(num)
                 }
