@@ -1,5 +1,8 @@
 fun isValidIpAddress(ip: String): Boolean {
-    var ipSegments = ip.split('.')
+    if (ip.isEmpty()){
+        return false
+    }
+    val ipSegments = ip.split('.')
     if (ipSegments.size != 4) {
 //        println("Invalid IP address; not 4 segments")
         return false
